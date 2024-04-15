@@ -20,8 +20,13 @@ public class CatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftArrow)){
-            transform.position = startPos - (Vector3.right * horizontalMovementDelta);
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Vector3 targetPos = startPos - (Vector3.right * horizontalMovementDelta);
+            // teleportation code
+            // transform.position = targetPos;
+            // animation code
+            transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime);
         }
 
     }
