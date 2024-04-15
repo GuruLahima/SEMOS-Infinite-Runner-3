@@ -429,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
   m_LocalRotation: {x: 0.05796805, y: -0, z: -0, w: 0.9983185}
-  m_LocalPosition: {x: 0, y: 2.44, z: -7.85}
+  m_LocalPosition: {x: 0, y: 2.44, z: -9.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -559,7 +559,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496b109cba0c9e442b36671cefd3e88c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMovementDelta: 3
+  horizontalMovementDelta: 1.8
+  movementInterval: 1
+  movementEase: 28
+  anim: {fileID: 1854917904}
+--- !u!95 &1854917904 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 994608097482093138, guid: 30f859ac921c3c744900c28000222d84,
+    type: 3}
+  m_PrefabInstance: {fileID: 1318052329376254685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1948398694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -628,7 +637,7 @@ PrefabInstance:
     - target: {fileID: 994608097491377586, guid: 30f859ac921c3c744900c28000222d84,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.163
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 994608097491377586, guid: 30f859ac921c3c744900c28000222d84,
         type: 3}
